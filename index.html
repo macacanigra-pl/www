@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <!-- Author -->
+    <meta name="author" content="MnL-PL Team">
+    <!-- description -->
+    <meta name="description"
+        content="MNL is a block-based functional programming language designed for educational purposes. It aims to teach programming concepts through visual blocks that represent code structures, making it easier for beginners to understand and create programs without the need for complex syntax.">
+    <!-- keywords -->
+    <meta name="keywords"
+        content="MNL, programming language, block-based programming, educational programming, visual coding, beginner-friendly coding, coding for kids, programming concepts, code structures, functional programming">
+    <!-- Page Title -->
+    <title>MNL | Macaca Nigra Language</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.ico">
+    <!-- Bundle -->
+    <link rel="stylesheet" href="vendor/css/bundle.min.css">
+    <!-- Plugin Css -->
+    <link rel="stylesheet" href="vendor/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="vendor/css/swiper.min.css">
+
+    <link rel="stylesheet" href="vendor/css/cubeportfolio.min.css">
+    <!-- Revolution Slider CSS Files -->
+    <link rel="stylesheet" href="assets/css/navigation.css">
+    <link rel="stylesheet" href="assets/css/settings.css">
+    <!-- Slick CSS Files -->
+    <link rel="stylesheet" href="vendor/css/slick.css">
+    <link rel="stylesheet" href="vendor/css/slick-theme.css">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Custom Style CSS File -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar-nav" data-offset="90">
+
+    <!-- Loader -->
+    <div class="loader" id="loader-fade">
+        <div class="loader-container">
+            <ul class="loader-box">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Loader ends -->
+
+    <!-- Header start -->
+    <header class="cursor-light">
+        <nav class="navbar navbar-top-default navbar-expand-lg nav-three-circles black bottom-nav nav-box-shadow no-animation">
+            <div class="container-fluid">
+                <a class="logo ml-lg-1" href="javascript:void(0)">
+                    <img src="assets/img/logo.png" alt="logo" title="Logo" class="logo-default">
+                    <img src="assets/img/logo.png" alt="logo" title="Logo" class="logo-scrolled">
+                </a>
+                <div class="collapse navbar-collapse d-none d-lg-block">
+                    <ul class="nav navbar-nav mx-auto">
+                        <li class="nav-item"> <a href="#home" class="scroll nav-link">home</a></li>
+                        <li class="nav-item"> <a href="#about" class="scroll nav-link">about</a></li>
+                        <li class="nav-item"> <a href="#why-mnl" class="scroll nav-link">why mnl</a></li>
+                        <li class="nav-item"> <a href="https://ide.mnl-pl.org" class="nav-link">playground</a></li>
+                        <li class="nav-item"> <a href="https://help.mnl-pl.org" class="nav-link">learn</a></li>
+                        <li class="nav-item"> <a href="#research-paper" class="scroll nav-link">research paper</a></li>
+                    </ul>
+                </div>
+                <!-- side menu open button -->
+                <a class="menu_bars d-inline-block menu-bars-setting animated-wrap sidemenu_toggle d-block d-lg-none">
+                    <div class="menu-lines animated-element">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+                <!-- Side Menu -->
+            </div>
+        </nav>
+        <!-- side menu open button -->
+        <a class="menu_bars menu-bars-setting animated-wrap sidemenu_toggle d-lg-inline-block d-none">
+            <div class="menu-lines animated-element">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </a>
+        <!-- Side Menu -->
+        <div class="side-menu center">
+            <div class="quarter-circle">
+                <div class="menu_bars2 active" id="btn_sideNavClose">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="inner-wrapper justify-content-center">
+                <div class="col-md-12 text-center">
+                    <a href="javascript:void(0)" class="logo-full mb-4"><img src="assets/img/logo_normal.png" alt=""></a>
+                </div>
+                <nav class="side-nav m-0">
+                    <ul class="navbar-nav flex-lg-row">
+                        <li class="nav-item"> <a href="#home" class="scroll nav-link">home</a></li>
+                        <li class="nav-item"> <a href="#about" class="scroll nav-link">about</a></li>
+                        <li class="nav-item"> <a href="#why-mnl" class="scroll nav-link">why mnl</a></li>
+                        <li class="nav-item"> <a href="https://ide.mnl-pl.org" class="nav-link">playground</a></li>
+                        <li class="nav-item"> <a href="https://help.mnl-pl.org" class="nav-link">learn </a></li>
+                        <li class="nav-item"> <a href="#research-paper" class="scroll nav-link">research paper</a></li>
+                    </ul>
+                </nav>
+
+                <div class="side-footer text-white w-100">
+                    <p class="text-white">&copy; 2020-2026 MnL-PL. Made by MnL-PL Team</p>
+                </div>
+            </div>
+        </div>
+        <a id="close_side_menu" href="javascript:void(0);"></a>
+        <!--Side Menu-->
+    </header>
+    <!-- Header end -->
+
+    <!-- Main Section start -->
+    <section id="home" class="p-0 h-100vh cursor-light">
+        <h2 class="d-none">heading</h2>
+        <!--Main Slider-->
+        <div id="rev_slider_8_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="weone" data-source="gallery"
+            style="background:transparent;padding:0px;">
+            <!-- START REVOLUTION SLIDER 5.4.8.1 fullscreen mode -->
+            <div id="rev_slider_8_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.8.1">
+                <ul><!-- SLIDE  -->
+                    <!-- SLIDE 1 -->
+                    <li data-index="rs-36" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
+                        data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0"
+                        data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4=""
+                        data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                        <!-- LAYERS -->
+
+                        <!-- LAYER Text -->
+                        <div class="tp-caption color-soft-red" data-x="['center','center','center','center']"
+                            data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['270','200','100','55']"
+                            data-fontsize="['60','50','40','40']" data-lineheight="['75','75','75','40']"
+                            data-width="['556','556','556','300']" data-height="['none','none','none','87']" data-whitespace="nowrap"
+                            data-type="text" data-responsive_offset="on"
+                            data-frames='[{"delay":100,"split":"chars","splitdelay":0.1,"speed":1480,"split_direction":"random","frame":"0","from":"y:50px;sX:1;sY:1;opacity:0;fb:20px;","color":"rgba(0,0,0,0)","to":"o:1;fb:0;","ease":"Power4.easeInOut"},{"delay":"wait","speed":350,"frame":"999","color":"transparent","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 10; min-width: 556px; max-width: 556px; white-space: nowrap; font-size: 60px; line-height: 75px; font-weight: 300; letter-spacing: 0px;font-family: 'Montserrat', sans-serif;">
+                            Learn to program is a breeze.</div>
+
+                        <!-- LAYER Text -->
+                        <div class="tp-caption color-black" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                            data-y="['top','top','top','top']" data-voffset="['348','260','155','98']" data-fontsize="['60','50','40','40']"
+                            data-lineheight="['75','75','45','45']" data-width="['556','556','556','350']"
+                            data-height="['none','none','none','87']" data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                            data-frames='[{"delay":150,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 10; min-width: 556px; max-width: 556px; white-space: nowrap; font-weight: 700; letter-spacing: 0px;font-family: 'Montserrat', sans-serif;">
+                            <div id="js-rotating">Easy to Learn, Understandable, It's a Functional PL </div>
+                        </div>
+
+                        <!-- LAYER Text -->
+                        <div class="tp-caption color-black" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                            data-y="['top','middle','middle','middle']" data-voffset="['460','95','0','10']" data-whitespace="normal"
+                            data-width="['630','630','550','440']" data-fontsize="['16','15','15','15']"
+                            data-lineheight="['25','25','22','22']" data-type="text" data-responsive_offset="on"
+                            data-frames='[{"delay":100,"speed":1480,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":350,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 10; min-width: 650px; max-width: 650px; white-space: nowrap; font-weight: 400; letter-spacing: 0px;font-family: 'Source Sans Pro', sans-serif;">
+                            Let's start some fun programming with MNL!
+                        </div>
+
+                        <!-- LAYER Button -->
+                        <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['170','200','90','120']"
+                            data-frames='[{"from":"y:50px;opacity:0;","speed":1000,"to":"o:1;","delay":800,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[175%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);bw:2px 2px 2px 2px;"}]'
+                            data-textAlign="['center','center','center','center']" data-width="['160','160','160','160']"
+                            style="z-index: 10; min-width: 960px; max-width: 960px">
+                            <a href="https://ide.mnl-pl.org" class="btn-setting color-black btn-hvr-up btn-hvr-blue link">Get Started</a>
+                        </div>
+
+                        <!-- LAYER Cylinder -->
+                        <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']"
+                            data-hoffset="['-20','-20','-20','-20']" data-y="['top','top','top','top']"
+                            data-voffset="['100','0','-150','-150']" data-width="none" data-height="none" data-whitespace="nowrap"
+                            data-type="image" data-responsive_offset="on"
+                            data-frames='[{"delay":50,"speed":1480,"frame":"0","from":"x:center;y:bottom;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":350,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 1;">
+                            <div class="rs-looped rs-slideloop" data-easing="Power0.easeInOut" data-speed="12" data-xs="0" data-xe="60"
+                                data-ys="100" data-ye="60"><img src="assets/img/slider-shape1.png" alt=""
+                                    data-ww="['99px','99px','99px','99px']" data-hh="['51px','51px','51px','51px']" data-no-retina> </div>
+                        </div>
+
+                        <!-- LAYER Top Wave soft-red -->
+                        <div class="tp-caption tp-resizeme" data-x="['right','right','right','right']"
+                            data-hoffset="['150','150','30','30']" data-y="['top','top','top','top']"
+                            data-voffset="['160','80','-100','-100']" data-width="none" data-height="none" data-whitespace="nowrap"
+                            data-type="image" data-responsive_offset="on"
+                            data-frames='[{"delay":50,"speed":1480,"frame":"0","from":"x:center;y:middle;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":350,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 1;">
+                            <div class="rs-looped rs-slideloop" data-easing="Power0.easeInOut" data-speed="12" data-xs="0" data-xe="-50"
+                                data-ys="50" data-ye="20"><img src="assets/img/slider-shape2.png" alt=""
+                                    data-ww="['66px','66px','66px','66px']" data-hh="['14px','14px','14px','14px']" data-no-retina> </div>
+                        </div>
+
+                        <!-- LAYER Semi Circle -->
+                        <div class="tp-caption tp-resizeme" data-x="['left','left','left','left']" data-hoffset="['250','80','80','30']"
+                            data-y="['top','top','top','top']" data-voffset="['227','-16','-16','-36']" data-width="none" data-height="none"
+                            data-whitespace="nowrap" data-type="image" data-responsive_offset="on"
+                            data-frames='[{"delay":50,"speed":1480,"frame":"0","from":"x:right;y:bottom;rZ:360deg;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":350,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 1;">
+                            <div class="rs-looped rs-rotate" data-easing="Power0.easeIn" data-startdeg="0" data-enddeg="360" data-speed="15"
+                                data-origin="50% 50%"><img src="assets/img/slider-shape3.png" alt=""
+                                    data-ww="['102px','102px','102px','102px']" data-hh="['67px','67px','67px','67px']" data-no-retina>
+                            </div>
+                        </div>
+
+                        <!-- LAYER Circle Gray Small -->
+                        <div class="tp-caption" data-x="['right','right','right','right']" data-hoffset="['300','200','100','100']"
+                            data-y="['bottom','bottom','center','center']" data-voffset="['200','50','200','200']" data-whitespace="normal"
+                            data-type="image" data-responsive_offset="on"
+                            data-frames='[{"delay":50,"speed":1490,"frame":"0","from":"x:center;y:top;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":350,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 2;">
+                            <div class="rs-looped rs-wave" data-speed="12" data-angle="90" data-radius="22px" data-origin="50% 50%">
+                                <div class="animated-wrap slider-social icon-small">
+                                    <div class="animated-element icon-box-small d-flex justify-content-center align-items-center">
+                                        <img src="assets/img/const-unit.png" alt="const-unit">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- LAYER const-boolean -->
+                        <div class="tp-caption" data-x="['left','left','left','left']" data-hoffset="['350','350','120','120']"
+                            data-y="['bottom','bottom','center','center']" data-voffset="['80','0','200','200']" data-width="none"
+                            data-height="none" data-whitespace="normal" data-type="image" data-responsive_offset="on"
+                            data-frames='[{"delay":50,"speed":1490,"frame":"0","from":"y:center;x:bottom;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":350,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 2;">
+
+                            <div class="rs-looped rs-wave" data-speed="12" data-angle="-90" data-radius="22px" data-origin="-50% -50%">
+                                <div class="animated-wrap slider-social icon-small">
+                                    <div class="animated-element icon-box-small d-flex justify-content-center align-items-center">
+                                        <img src="assets/img/const-boolean.png" alt="const-boolean">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- LAYER pat-number -->
+                        <div class="tp-caption" data-x="['right','right','right','right']" data-hoffset="['-110','-20','0','0']"
+                            data-y="['middle','middle','bottom','bottom']" data-voffset="['200','300','50','10']" data-width="none"
+                            data-height="none" data-whitespace="normal" data-type="image" data-responsive_offset="on"
+                            data-frames='[{"delay":50,"speed":1490,"frame":"0","from":"x:center;y:top;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":350,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 2;">
+
+                            <div class="rs-looped rs-wave" data-speed="19" data-angle="45" data-radius="22px" data-origin="50% 50%">
+                                <div class="animated-wrap slider-social icon-small">
+                                    <div class="animated-element icon-box-small d-flex justify-content-center align-items-center">
+                                        <img src="assets/img/pat-number.png" alt="pat-number">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- LAYER exp-cons-list -->
+                        <div class="tp-caption" data-x="['left','left','left','left']" data-hoffset="['-250','-20','0','0']"
+                            data-y="['middle','middle','bottom','bottom']" data-voffset="['70','70','100','100']" data-width="none"
+                            data-height="none" data-whitespace="normal" data-type="image" data-responsive_offset="on"
+                            data-frames='[{"delay":50,"speed":1490,"frame":"0","from":"y:center;x:bottom;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":350,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 2;">
+
+                            <div class="rs-looped rs-slideloop" data-easing="Power0.easeInOut" data-speed="12" data-xs="0" data-xe="0"
+                                data-ys="-10" data-ye="60">
+                                <div class="animated-wrap slider-social icon-small">
+                                    <div class="animated-element icon-box-small d-flex justify-content-center align-items-center">
+                                        <img src="assets/img/exp-cons-list.png" alt="exp-cons-list">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- LAYER Bottom Wave Gray -->
+                        <div class="tp-caption tp-resizeme" data-x="['right','right','right','right']"
+                            data-hoffset="['-200','-200','-5000','-5000']" data-y="['bottom','bottom','bottom','bottom']"
+                            data-voffset="['150','150','150','150']" data-width="none" data-height="none" data-whitespace="nowrap"
+                            data-type="image" data-responsive_offset="on"
+                            data-frames='[{"delay":50,"speed":1480,"frame":"0","from":"x:center;y:middle;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":350,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 1;">
+                            <div class="rs-looped rs-slideloop" data-easing="Power0.easeInOut" data-speed="12" data-xs="0" data-xe="0"
+                                data-ys="10" data-ye="-50"><img src="assets/img/slider-shape4.png" alt=""
+                                    data-ww="['24px','24px','24px','24px']" data-hh="['150px','150px','150px','150px']" data-no-retina>
+                            </div>
+                        </div>
+
+                        <!-- LAYER Bottom Diamond -->
+                        <div class="tp-caption tp-resizeme" data-x="['left','left','left','left']" data-hoffset="['83','66','20','20']"
+                            data-y="['bottom','bottom','bottom','bottom']" data-voffset="['200','80','-100','-100']" data-width="none"
+                            data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on"
+                            data-frames='[{"delay":50,"speed":1480,"frame":"0","from":"x:center;y:middle;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":350,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 1;">
+                            <div class="rs-looped rs-slideloop" data-easing="Power0.easeInOut" data-speed="12" data-ys="-40" data-ye="40"
+                                data-xs="0" data-xe="20"><img src="assets/img/slider-shape5.png" alt=""
+                                    data-ww="['40px','40px','40px','40px']" data-hh="['119px','119px','119px','119px']" data-no-retina>
+                            </div>
+                        </div>
+
+                        <!-- LAYER Top Diamond -->
+                        <div class="tp-caption tp-resizeme" data-x="['right','right','right','right']"
+                            data-hoffset="['150','150','50','50']" data-y="['top','top','top','top']"
+                            data-voffset="['70','-70','-130','-130']" data-width="none" data-height="none" data-whitespace="nowrap"
+                            data-type="image" data-responsive_offset="on"
+                            data-frames='[{"delay":50,"speed":1480,"frame":"0","from":"x:center;y:middle;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":350,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 1;">
+                            <div class="rs-looped rs-wave" data-speed="12" data-angle="90" data-radius="12px" data-origin="0% 0%"><img
+                                    src="assets/img/slider-shape6.png" alt="" data-ww="['44px','44px','44px','44px']"
+                                    data-hh="['69px','69px','69px','69px']" data-no-retina> </div>
+                        </div>
+
+                        <!-- LAYER Top Left -->
+                        <div class="tp-caption" data-x="['left','left','left','left']" data-hoffset="['-500','-500','5000','5000']"
+                            data-y="['top','top','top','top']" data-voffset="['-100','-100','0','0']" data-whitespace="nowrap"
+                            data-width="['394px','394px','394px','394px']" data-height="['393px','393px','393px','393px']"
+                            data-responsive_offset="on"
+                            data-frames='[{"delay":319.921875,"speed":500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 1;">
+                            <div class="rs-looped rs-rotate" data-easing="Power0.easeIn" data-speed="150" data-startdeg="0"
+                                data-enddeg="360" data-origin="45% 45%"><img src="assets/img/circle-top-left.png" alt=""
+                                    data-ww="['394px','394px','394px','394px']" data-hh="['394px','394px','394px','394px']" data-no-retina>
+                            </div>
+                        </div>
+
+                        <!-- LAYER Top Right Inner -->
+                        <div class="tp-caption" data-x="['left','left','left','left']" data-hoffset="['1180','1180','5000','5000']"
+                            data-y="['top','top','top','top']" data-voffset="['-200','-200','-200','-200']"
+                            data-width="['575px','575px','575px','575px']" data-height="['571px','571px','571px','571px']"
+                            data-frames='[{"delay":319.921875,"speed":500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 1;">
+                            <div class="rs-looped rs-wave" data-speed="6" data-angle="0" data-radius="5px" data-origin="50% 50%"><img
+                                    src="assets/img/circle-top-right-inner.png" alt="" data-ww="['575px','575px','575px','575px']"
+                                    data-hh="['571px','571px','571px','571px']"> </div>
+                        </div>
+
+                        <!-- LAYER Top Right -->
+                        <div class="tp-caption" data-x="['left','left','left','left']" data-hoffset="['1280','1280','5000','5000']"
+                            data-y="['top','top','top','top']" data-voffset="['-110','-110','-110','-110']"
+                            data-width="['381px','381px','381px','381px']" data-height="['380px','380px','380px','380px']"
+                            data-frames='[{"delay":319.921875,"speed":500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 1;">
+                            <div class="rs-looped" data-easing="Power0.easeInOut" data-speed="0" data-xs="0" data-xe="0" data-ys="0"
+                                data-ye="0"><img src="assets/img/circle-top-right.png" alt="" data-ww="['381px','381px','381px','381px']"
+                                    data-hh="['380px','380px','380px','380px']" data-no-retina> </div>
+                        </div>
+
+                        <!-- LAYER Center -->
+                        <div class="tp-caption tp-resizeme rs-parallaxlevel-8" data-x="['left','left','center','center']"
+                            data-hoffset="['300','300','-5000','-5000']" data-y="['top','top','middle,'middle']"
+                            data-voffset="['50','50','0','0']" data-type="image" data-responsive_offset="on"
+                            data-frames='[{"delay":319.921875,"speed":500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            style="z-index: 1;">
+                            <div class="rs-looped rs-wave" data-speed="15" data-angle="90" data-radius="12px" data-origin="50% 50%"><img
+                                    src="assets/img/circle-center.png" alt="" data-ww="['672px','672px','500px','320px']"
+                                    data-hh="['673px','673px','500px','320px']" data-no-retina> </div>
+                        </div>
+
+                        <!-- LAYER Arrows -->
+                        <div class="tp-caption tp-resizeme" data-x="['left','left','left','left']" data-hoffset="['30','30','-20','-100']"
+                            data-y="['top','top','top','top']" data-voffset="['50','50','50','50']" data-width="none" data-height="none"
+                            data-whitespace="nowrap" data-type="image" data-responsive_offset="on"
+                            data-frames='[{"delay":50,"speed":1480,"frame":"0","from":"x:center;y:middle;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":350,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 1;">
+                            <div class="rs-looped rs-slideloop" data-easing="Power0.easeInOut" data-speed="30" data-xs="-90" data-xe="90"
+                                data-ys="0" data-ye="20"><img src="assets/img/slider-shape7.png" alt=""
+                                    data-ww="['99px','99px','99px','99px']" data-hh="['100px','100px','100px','100px']" data-no-retina>
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+
+                <div class="tp-bannertimer" style="height: 5px; background: rgba(0,0,0,0.15);"></div>
+            </div>
+        </div>
+        <!--Main Slider ends -->
+
+    </section>
+    <!-- Main Section end -->
+
+    <!--About start-->
+    <section class="about pb-0 overflow-visible" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 pr-5 mb-5 mb-lg-0 wow fadeInLeft">
+                    <div class="rare-box-soft-red"></div>
+                    <img src="assets/img/about.jpg" class="about-img-small position-relative w-100" alt="">
+                </div>
+                <div class="col-lg-6 pl-6">
+                    <div class="main-title text-lg-left offset-md-1 mb-0 wow fadeInUp" data-wow-delay="300ms">
+                        <h5 class="wow fadeInUp" data-wow-delay="300ms"> Macaca Nigra Language | MNL </h5>
+                        <h2 class="wow fadeInUp font-weight-light" data-wow-delay="400ms"> makes <span class="color-green">learning</span>
+                            to
+                            program easy.</h2>
+                        <p class="pb-4 wow fadeInUp" data-wow-delay="500ms">MNL is a block-based functional programming language developed
+                            to facilitate programming education. It enables visualization of computational processes, including beta
+                            reduction and function evaluation. Additionally, MNL employs visual elements such as shape and color to convey
+                            semantic information to users.</p>
+                        <a href="https://help.mnl-pl.org"
+                            class="btn-setting color-black btn-hvr-up btn-soft-red btn-hvr-yellow text-white link wow fadeInUp"
+                            data-wow-delay="700ms">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--About end-->
+
+    <!-- About Boxes start -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-title wow fadeIn" data-wow-delay="300ms">
+                        <h2>It is an <span class="color-soft-red">Easy-to-learn</span> and <span class="color-green">understandable</span>
+                            <span class="color-blue">functional
+                                programming language</span>.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="about-box mb-5 mb-lg-0 mx-auto bg-blue">
+                        <span class="pro-step d-inline-block color-white"><i class="fa fa-puzzle-piece"></i></span>
+                        <h5 class="font-weight-500 color-white mt-25px mb-15px text-capitalize">Easy to Learn</h5>
+                        <p class="font-weight-light color-white">Just drag'n drop, then attach or detach the block.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="about-box mb-5 mb-lg-0 mx-auto bg-green">
+                        <span class="pro-step d-inline-block color-white"><i class="fa fa-pencil"></i></span>
+                        <h5 class="font-weight-500 color-white mt-25px mb-15px">Understandable</h5>
+                        <p class="font-weight-light color-white">The keyword is a whole in English, not an abbreviation.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="about-box mb-0 mx-auto bg-soft-red">
+                        <span class="pro-step d-inline-block color-white"><i class="fa fa-code"></i></span>
+                        <h5 class="font-weight-500 color-white mt-25px mb-15px text-capitalize">a Functional PL</h5>
+                        <p class="font-weight-light color-white">It is a pure block-based functioan programming language.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Boxes ends -->
+
+    <!-- Why MNL start -->
+    <section id="why-mnl" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-title wow fadeIn" data-wow-delay="300ms">
+                        <h2 class="mb-0">The <span class="color-soft-red">Capabilities</span> of MNL </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row wow fadeInUp team" data-wow-delay="300">
+                <div class="col-lg-6 col-xl-3 p-0 team-col ml-md-auto mr-md-0 mx-auto">
+                    <div class="team-classic-content hvr-team soft-red">
+                        <h3 class="mb-3 text-capitalize color-soft-red">Reactive</h3>
+                        <h5 class="mb-3 text-capitalize color-black">Environment</h5>
+                        <p class="mt-3 mb-3 color-black">Reactive means action and reaction. When user makes any changes , MNL will response
+                            it with the result of evaluation or error if any.</p>
+                        <ul class="team-social">
+                            <li class="d-inline-block"><a href="https://help.mnl-pl.org/index.html#block-info" class="dark-bg-hvr"><i
+                                        class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-3 p-0 team-col2 mr-md-auto ml-md-0 mx-auto">
+                    <div class="row">
+                        <div class="col-md-12 order-md-0">
+                            <div class="team-classic-content hvr-team2 green">
+                                <h3 class="mb-3 text-capitalize color-green">Shape & Color</h3>
+                                <h5 class="mb-3 text-capitalize color-black">Visualization</h5>
+                                <p class="mt-3 mb-3 color-black">Assisting users by utilizing visual language capabilities: shapes and
+                                    colors. Shapes will represent grammar, while colors will indicate value types.</p>
+                                <ul class="team-social">
+                                    <li class="d-inline-block"><a href="https://help.mnl-pl.org/index.html#the-shape-and-color"
+                                            class="dark-bg-hvr"><i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100 d-none d-lg-block d-xl-none"></div>
+                <div class="col-lg-6 col-xl-3 p-0 team-col2 mr-md-auto ml-md-0 mx-auto team-row2">
+                    <div class="row">
+                        <div class="col-md-12 order-md-0">
+                            <div class="team-classic-content hvr-team2 blue">
+                                <h3 class="mb-3 text-capitalize color-blue">YAKI</h3>
+                                <h5 class="mb-3 text-capitalize color-black">Environment</h5>
+                                <p class="mt-3 mb-3 color-black">The Yet Another Compiler Interface (YAKI) is a robust tool designed to
+                                    convert block-based MNL into text-based languages, including SML and Scala.</p>
+                                <ul class="team-social">
+                                    <li class="d-inline-block"><a href="https://help.mnl-pl.org/compiler.html" class="dark-bg-hvr"><i
+                                                class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-3 p-0 team-col2 mr-md-auto ml-md-0 mx-auto team-row2">
+                    <div class="row">
+                        <div class="col-md-12 order-md-0">
+                            <div class="team-classic-content hvr-team2 soft-red">
+                                <h3 class="mb-3 text-capitalize color-soft-red">Typing Suggestion</h3>
+                                <h5 class="mb-3 text-capitalize color-black">Type system</h5>
+                                <p class="mt-3 mb-3 color-black">MNL will elegantly present a suggested term type in a color box,
+                                    thoughtfully aligned with its type constraints.</p>
+                                <ul class="team-social">
+                                    <li class="d-inline-block"><a href="https://help.mnl-pl.org/type-suggestion.html" class="dark-bg-hvr"><i
+                                                class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-3 p-0 team-col ml-md-auto mr-md-0 mx-auto team-row2">
+                    <div class="team-classic-content hvr-team green">
+                        <h3 class="mb-3 text-capitalize color-green">Type Inference</h3>
+                        <h5 class="mb-3 text-capitalize color-black">Type system</h5>
+                        <p class="mt-3 mb-3 color-black">Users do not need to declare the type explicitly! Let MNL do it for them (implicit
+                            typing).</p>
+                        <ul class="team-social">
+                            <li class="d-inline-block"><a href="https://help.mnl-pl.org/type-inference.html" class="dark-bg-hvr"><i
+                                        class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-3 p-0 team-col2 mr-md-auto ml-md-0 mx-auto team-row2">
+                    <div class="row">
+                        <div class="col-md-12 order-md-0">
+                            <div class="team-classic-content hvr-team2 blue">
+                                <h3 class="mb-3 text-capitalize color-blue">Beta Reduction</h3>
+                                <h5 class="mb-3 text-capitalize color-black">Program visualization</h5>
+                                <p class="mt-3 mb-3 color-black">Present a visual representation of beta reduction for call-by-value or
+                                    call-by-push-structure evaluation strategies.
+                                </p>
+                                <ul class="team-social">
+                                    <li class="d-inline-block"><a href="https://help.mnl-pl.org/program-visualization.html"
+                                            class="dark-bg-hvr"><i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-3 p-0 team-col2 mr-md-auto ml-md-0 mx-auto team-row2">
+                    <div class="row">
+                        <div class="col-md-12 order-md-0">
+                            <div class="team-classic-content hvr-team2 soft-red">
+                                <h3 class="mb-3 text-capitalize color-soft-red">Function value</h3>
+                                <h5 class="mb-3 text-capitalize color-black">Program visualization</h5>
+                                <p class="mt-3 mb-3 color-black">MNL provides a tool named Tarsius, which visually represents the function
+                                    value.</p>
+                                <ul class="team-social">
+                                    <li class="d-inline-block"><a href="https://help.mnl-pl.org/program-visualization.html"
+                                            class="dark-bg-hvr"><i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-3 p-0 team-col2 mr-md-auto ml-md-0 mx-auto team-row2">
+                    <div class="row">
+                        <div class="col-md-12 order-md-0">
+                            <div class="team-classic-content hvr-team2 green">
+                                <h3 class="mb-3 text-capitalize color-green">Typing Rule</h3>
+                                <h5 class="mb-3 text-capitalize color-black">Type system</h5>
+                                <p class="mt-3 mb-3 color-black">Another YAKI capability is writing the typing derivation of MNL.</p>
+                                <ul class="team-social">
+                                    <li class="d-inline-block"><a href="https://help.mnl-pl.org/compiler.html" class="dark-bg-hvr"><i
+                                                class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team ends -->
+
+    <!-- Quote start -->
+    <section class="parallax-setting parallaxie parallax1">
+        <h2 class="d-none">heading</h2>
+        <div class="container">
+            <div class="row align-items-center position-relative">
+                <div class="col-md-12">
+                    <div class="quote-text text-center wow fadeInRight" data-wow-delay="300ms">
+                        <div class="quote d-flex justify-content-start mb-2rem"><i class="fa fa-quote-left"></i></div>
+                        <h2 class="font-weight-light mb-5 line-height-normal"><span class="color-soft-red">A picture</span> is worth a
+                            thousand
+                            words</h2>
+                        <h3 class="color-blue">Anonymous</h3>
+                        <div class="quote d-flex justify-content-end mb-3"><i class="fa fa-quote-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Quote ends -->
+
+    <!-- Research paper start -->
+    <section id="research-paper" class="bg-light-gray pricing-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-title wow fadeIn" data-wow-delay="300ms">
+                        <h5> publication </h5>
+                        <h2 class="mb-0"><span class="color-soft-red">Research</span> Paper</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-66px mt-xs-4rem">
+                <div class="col-lg-4 col-md-6 col-sm-12 text-center mb-xs-5 wow fadeInUp">
+                    <div class="pricing-item price-transform hvr-bg-yellow">
+                        <div class="quarter-triangle"></div>
+
+                        <div class="triangle-inner-content">
+                            <i class="fa fa-star"></i>
+                            <span> Published </span>
+                        </div>
+
+                        <div class="price-box2 clearfix">
+                            <div class="price_title">
+                                <h4 class="text-capitalize m-0">PAINT</h4>
+                                <p class="price-sub-heading text-capitalize">2025</p>
+                            </div>
+                        </div>
+                        <div class="price-description">
+                            <p> The MNL: A Block-Based Functional Programming Language with Reactive Blocks</p>
+                        </div>
+                        <div class="text-center">
+                            <a href="https://dl.acm.org/doi/10.1145/3759534.3762684"
+                                class="btn-setting color-black btn-hvr-up btn-yellow btn-hvr-white">read</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 text-center mb-xs-5 wow fadeInUp">
+                    <div class="pricing-item hvr-bg-blue">
+                        <div class="price-box clearfix">
+                            <div class="price_title">
+                                <h4 class="text-capitalize">On-going</h4>
+                            </div>
+                        </div>
+                        <div class="price-description">
+                            <p>Call-by-push-structure: an evaluation strategy for block-based language.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Research paper ends -->
+    <!-- Footer starts -->
+    <footer class="p-half bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 text-center">
+                    <p class="copyrights mt-2 mb-2">&copy; 2020-2026 MnL-PL. Made by <a href="javascript:void(0)" class="soft-red">MnL-PL
+                            Team</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer ends -->
+
+    <!--Animated Cursor-->
+    <div id="animated-cursor">
+        <div id="cursor">
+            <div id="cursor-loader"></div>
+        </div>
+    </div>
+    <!--Animated Cursor End-->
+
+    <!-- JavaScript -->
+    <script src="vendor/js/bundle.min.js"></script>
+
+    <!-- Plugin Js -->
+    <script src="vendor/js/jquery.fancybox.min.js"></script>
+    <script src="vendor/js/owl.carousel.min.js"></script>
+    <script src="vendor/js/swiper.min.js"></script>
+    <script src="vendor/js/jquery.cubeportfolio.min.js"></script>
+    <script src="vendor/js/jquery.appear.js"></script>
+    <script src="vendor/js/parallaxie.min.js"></script>
+    <script src="vendor/js/wow.min.js"></script>
+    <!-- Owl Carousel JS File -->
+    <script src="assets/js/owl.carousel.js"></script>
+    <!-- Slick JS File -->
+    <script src="vendor/js/slick.min.js"></script>
+    <!-- Tween Max Animation File -->
+    <script src="assets/js/TweenMax.min.js"></script>
+    <!-- Morphtext File -->
+    <script src="assets/js/morphext.min.js"></script>
+    <!-- REVOLUTION JS FILES -->
+    <script src="vendor/js/jquery.themepunch.tools.min.js"></script>
+    <script src="vendor/js/jquery.themepunch.revolution.min.js"></script>
+    <!-- SLIDER REVOLUTION EXTENSIONS -->
+    <script src="vendor/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="vendor/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="vendor/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="vendor/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="vendor/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="vendor/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="vendor/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="vendor/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="vendor/js/extensions/revolution.extension.video.min.js"></script>
+
+    <!-- Google Map Api -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgIfLQi8KTxTJahilcem6qHusV-V6XXjw"></script>
+    <script src="assets/js/maps.min.js"></script>
+
+    <!-- custom script -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
